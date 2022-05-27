@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react"
-import MealItem from "./MealItem"
+import MealItem from "./home/MealItem"
 
-export default function Home() {
+export default function Meal({id}) {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState("")
     const fetchAPI = useCallback(() => {
-        return fetch("http://localhost:5000/api/meals")
+        return fetch("http://localhost:5000/api/meals/"+id)
             .then(results => results.json())
             .then(data => {
                 setData(data)
@@ -19,8 +19,8 @@ export default function Home() {
     }, [fetchAPI])
     return (
         <div>
-            <h1>Home</h1>
-            <h2>Render all the meals</h2>
+            <h1>Meal</h1>
+            <h2>Render the meal</h2>
       {/* When the search is loading, show "loading..." */}
       {loading ? "loading..." : 
         <>

@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react"
-import MealItem from "./MealItem"
 
-export default function Home() {
+export default function Meals() {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState("")
     const fetchAPI = useCallback(() => {
@@ -19,19 +18,21 @@ export default function Home() {
     }, [fetchAPI])
     return (
         <div>
-            <h1>Home</h1>
-            <h2>Render all the meals</h2>
+            <h1>Meals</h1>
+            <h2>Render the meals to edit</h2>
       {/* When the search is loading, show "loading..." */}
       {loading ? "loading..." : 
         <>
           {/* When the search result is empty (no users), you should show "No results..." */}
           {data.length === 0 ? "No results..." :
-              <>
-                <ul>
-              {data.map(meal => {
-                return <>*meal {meal.id} <MealItem key={meal.id} meal={meal}/> <br /></>
-              })}
-                  </ul>
+            <>
+              {data.map(item => {
+                  return <><a href={"/meals/" + item.id}>meal {item.id}: {item.title}</a> <br /></>
+              })} <br />
+                <form>
+                    <input />
+                    <button>create the meal</button>   
+                </form>
             </>
           }
         </>
