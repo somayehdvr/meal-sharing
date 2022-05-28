@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import MealItem from "./MealItem"
 import FetchAPI from "./FetchAPI"
+import AddReservation from "./AddReservation"
 
 export default function Meal({ id }) {
   const [loading, setLoading] = useState(true)
@@ -25,6 +26,7 @@ export default function Meal({ id }) {
                   return <>*meal {meal.id} <MealItem key={meal.id} meal={meal} /> <br /></>
                 })}
               </ul>
+              <AddReservation mealId={id} />
             </>
           }
         </>

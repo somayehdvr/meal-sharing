@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import AddMeal from "./AddMeal"
 import FetchAPI from "./FetchAPI"
 
 export default function Meals() {
@@ -21,10 +22,7 @@ export default function Meals() {
               {data.map(item => {
                 return <><a href={"/meals/" + item.id}>meal {item.id}: {item.title}</a> <br /></>
               })} <br />
-              <form>
-                <input />
-                <button>create the meal</button>
-              </form>
+              <AddMeal />
             </>
           }
         </>
