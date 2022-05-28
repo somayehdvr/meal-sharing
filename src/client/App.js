@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch, useParams } from "react-router-dom";
-import TestComponent from "./components/TestComponent/TestComponent";
-import Home from "./components/home/index"
-import Meals from "./components/Meals/Meals";
+import Home from "./components/Home"
+import Meals from "./components/Meals";
 import Meal from "./components/Meal";
 
 function App() {

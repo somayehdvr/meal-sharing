@@ -1,24 +1,21 @@
-import React, { useCallback, useEffect, useState } from "react"
+import React, { useCallback, useEffect } from "react"
 
-export default function FetchAPI(API) {
-    const [loading, setLoading] = useState(true)
-    const [data, setData] = useState("")
+export default function FetchAPI(props) {
     const fetchAPI = useCallback(() => {
-        return fetch(API)
+        return fetch(props.API)
             .then(results => results.json())
             .then(data => {
-                setData(data)
-                setLoading(false)
+                props.setData(data)
+                props.setLoading(false)
             })
-            //  When the search is failed, you should show "error fetching (reason why it failed)..." 
+            //  When the fetch is failed, show "error fetching (reason why it failed)..." 
             .catch(error => console.error("error fetching " + error))
     }, [])
     useEffect(() => {
         fetchAPI()
-    }, [fetchAPI])
+    }, [props])
     return (
         <>
-            nothing
         </>
     )
 }
