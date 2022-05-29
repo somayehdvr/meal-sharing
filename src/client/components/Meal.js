@@ -14,7 +14,7 @@ export default function Meal({ id }) {
       {loading ?
         <>
           "loading..."
-          <FetchAPI setData={setData} setLoading={setLoading} API={"http://localhost:5000/api/meals/" + id} />
+          <FetchAPI setData={setData} setLoading={setLoading} API={"/api/meals/" + id} />
         </>
         :
         <>

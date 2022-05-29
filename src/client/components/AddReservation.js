@@ -19,7 +19,7 @@ export default function AddReservation(props) {
     }
     return (
         <>
-            <form action="http://localhost:5000/api/reservations/" method="POST" target="_blank">
+            <form action="/api/reservations/" method="POST" target="_blank">
                 <header>Create Reservation</header><br />
                 <label for="meal-id">meal_id: </label>
                 <input name="meal_id" id="meal_id" value={props.mealId} placeholder="meal_id"></input><br />

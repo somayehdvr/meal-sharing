@@ -23,7 +23,7 @@ export default function AddMeal() {
     }
     return (
         <>
-            <form action="http://localhost:5000/api/meals/" method="POST" target="_blank">
+            <form action="/api/meals/" method="POST" target="_blank">
                 <header><h3>Create Meal</h3></header><br />
                 <label for="title">title: </label>
                 <input name="title" id="title" value={title} onChange={handleTitle} placeholder="title"></input><br />

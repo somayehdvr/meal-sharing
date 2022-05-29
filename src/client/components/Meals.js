@@ -13,7 +13,7 @@ export default function Meals() {
       {loading ?
         <>
           "loading..."
-          <FetchAPI setData={setData} setLoading={setLoading} API={"http://localhost:5000/api/meals"} />
+          <FetchAPI setData={setData} setLoading={setLoading} API={"/api/meals"} />
         </> :
         <>
           {/* When the fetch result is empty (no meals), show "No results..." */}
