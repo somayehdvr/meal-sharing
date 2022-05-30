@@ -17,7 +17,7 @@ export default function Header() {
             <ul class="header-nav">
                 <li><a href="/" title="home">home</a></li>
                 <li><a href="#about" title="about">about</a></li>
-                <li><a href="#our-services" title="our services">Meals</a></li>
+                <li><a href="/meals" title="our services">Meals</a></li>
             </ul>
                 </nav>
                 {/* end nav  */}
