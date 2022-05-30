@@ -6,7 +6,12 @@ export default function AddReservation(props) {
     const [contact_name, setContact_name] = useState("")
     const [contact_email, setContact_email] = useState("")
     const handleNumber_of_guests = (event) => {
-        setNumber_of_guests(event.target.value)
+        let val = event.target.value;
+        const max = props.max_reservations
+        val = val >= max ? 
+            max :
+            val < max && val > 0 ? val : 0;
+        setNumber_of_guests(val)
     }
     const handleContact_phonenumber = (event) => {
         setContact_phonenumber(event.target.value)
@@ -24,7 +29,7 @@ export default function AddReservation(props) {
                 <label for="meal-id">meal_id: </label>
                 <input name="meal_id" id="meal_id" value={props.mealId} placeholder="meal_id"></input><br />
                 <label for="number_of_guests">number_of_guests: </label>
-                <input name="number_of_guests" id="number_of_guests" value={number_of_guests} onChange={handleNumber_of_guests} placeholder="number_of_guests"></input><br />
+                <input name="number_of_guests" id="number_of_guests" value={number_of_guests} onChange={handleNumber_of_guests} type="number" min="1" max={props.max_reservations} placeholder="number_of_guests"></input><br />
                 <label for="contact_phonenumber">contact_phonenumber: </label>
                 <input name="contact_phonenumber" id="contact_phonenumber" value={contact_phonenumber} onChange={handleContact_phonenumber} placeholder="contact_phonenumber"></input><br />
                 <label for="contact_name">contact_name: </label>

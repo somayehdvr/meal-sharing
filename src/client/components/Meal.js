@@ -26,7 +26,11 @@ export default function Meal({ id }) {
                   return <>*meal {meal.id} <MealItem key={meal.id} meal={meal} /> <br /></>
                 })}
               </ul>
-              <AddReservation mealId={id} />
+              { data[0].max_reservations > 0 ? 
+                <AddReservation mealId={id} max_reservations={data[0].max_reservations} />
+                :
+                <> No More Available Reservations!</>
+              }
             </>
           }
         </>
