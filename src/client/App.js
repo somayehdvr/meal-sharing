@@ -5,12 +5,14 @@ import Meals from "./components/Meals";
 import Meal from "./components/Meal";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import "./App.css"
 
 function App() {
   return (
 
     <Router>
       <Header />
+      <section id="banner" />
       <Switch>
         <Route exact path="/">
           <Home />

@@ -6,11 +6,13 @@
 }
 
 #root {
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
   height: 100vh;
 }
-
+.main{
+background-image: url("./assets/images/bg.jpg");
+}
 body {
   margin: 0;
   font-size: 17px;
@@ -39,8 +41,8 @@ button {
 
 @media screen and (max-width: 1400px) {
   #root {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
