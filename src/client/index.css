@@ -18,7 +18,7 @@ background-image: url("./assets/images/bg.jpg");
 body {
   margin: 0;
   font-size: 17px;
-  background-color: #66bfbf;
+  background-color: rgb(121, 43, 23);
 }
 
 ul {
@@ -33,7 +33,7 @@ a {
 }
 
 button {
-  background-color: #3e99c0;
+  background-color: rgb(254, 166, 92);
   border-radius: 8px;
   border-width: 0px;
   font-weight: 295;

@@ -4,7 +4,7 @@ import BorderComponent from "./BorderComponent"
 export default function MealItem({ meal }) {
     return (
         
-            <BorderComponent color="#66bfbf">
+            <BorderComponent color="rgb(254, 166, 92)">
             <h3>
                 id: {meal.id} <br />
                 title: {meal.title} <br />

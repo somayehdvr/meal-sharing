@@ -3,7 +3,7 @@
 }
 
 .App {
-    background-color:#eaf6f6;
+    background-color:wheat;
     padding: 0.5em;
 }
 
@@ -26,6 +26,11 @@
     justify-content:space-between;
 }
 
+/* ===================================================================
+ * # borderComponent
+ *
+ * ------------------------------------------------------------------- */
+
 .borderComponent {
     margin: 5px;
     padding: 10px;
@@ -40,7 +45,7 @@
 
 .borderComponent:hover {
     margin: 5px;
-    background-color:#eec60a;
+    background-color:gold;
     cursor: pointer;
     display: block;
     margin: 15px auto;
@@ -49,13 +54,31 @@
     box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
+@media only screen and (max-width: 420px) {
+    .borderComponent {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 900px) {
+    .borderComponent {
+        width: 45%;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .borderComponent {
+        width: 30%;
+    }
+  }
+
 /* ===================================================================
  * # header
  *
  * ------------------------------------------------------------------- */
 
 .header-nav-brand {
-    background-color:#5585b5;
+    background-color:rgb(154, 76, 56);
     border-bottom: .1rem solid #eeeeee;
     color: white;
 }
@@ -113,7 +136,7 @@ footer {
 }
 
 footer, footer p, footer a{
-    background-color: #5585b5;
+    background-color: rgb(154, 76, 56);
     color: white;
 }
 

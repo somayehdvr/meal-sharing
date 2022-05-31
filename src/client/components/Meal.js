@@ -23,7 +23,7 @@ export default function Meal({ id }) {
             <>
               <ul>
                 {data.map(meal => {
-                  return <>*meal {meal.id} <MealItem key={meal.id} meal={meal} /> <br /></>
+                  return <><MealItem key={meal.id} meal={meal} /> <br /></>
                 })}
               </ul>
               { data[0].max_reservations > 0 ? 

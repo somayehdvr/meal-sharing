@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import AddMeal from "./AddMeal"
 import FetchAPI from "./FetchAPI"
+import BorderComponent from "./BorderComponent"
 
 export default function Meals() {
   const [loading, setLoading] = useState(true)
@@ -19,10 +20,12 @@ export default function Meals() {
           {/* When the fetch result is empty (no meals), show "No results..." */}
           {data.length === 0 ? "No results..." :
             <>
+              <div id="content">
               {data.map(item => {
-                return <><a href={"/meals/" + item.id}>meal {item.id}: {item.title}</a> <br /></>
-              })} <br />
-              <AddMeal />
+                return <><BorderComponent color="rgb(254, 166, 92)"><a href={"/meals/" + item.id}>meal {item.id}: {item.title}</a></BorderComponent></>
+              })}
+              </div>
+              <AddMeal /><br/>
             </>
           }
         </>

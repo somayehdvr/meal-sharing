@@ -37,7 +37,7 @@ export default function AddReservation(props) {
                 <label for="contact_email">contact_email: </label>
                 <input name="contact_email" id="contact_email" type="email" value={contact_email} onChange={handleContact_email} placeholder="contact_email"></input><br /><br />
                 <button type="submit">Book seat</button>
-            </form>
+            </form><br />
         </>
     )
 }
