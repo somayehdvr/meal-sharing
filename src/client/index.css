@@ -10,12 +10,15 @@
   padding-right: 5%;
   height: 100vh;
 }
+
 .main{
 background-image: url("./assets/images/bg.jpg");
 }
+
 body {
   margin: 0;
   font-size: 17px;
+  background-color: #66bfbf;
 }
 
 ul {

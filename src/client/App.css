@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.App {
+    background-color:#eaf6f6;
+    padding: 0.5em;
+}
+
 #banner {
     background-image: url("./assets/images/banner.jpg");
     background-position: right;
@@ -11,14 +16,48 @@
     background-repeat: no-repeat;
 }
 
+#content {
+    width: 100%;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.borderComponent {
+    margin: 5px;
+    padding: 10px;
+    background-color:white;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    overflow: hidden;
+    position: relative;
+    width: 30%;
+}
+
+.borderComponent:hover {
+    margin: 5px;
+    background-color:#eec60a;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
 /* ===================================================================
  * # header
  *
  * ------------------------------------------------------------------- */
 
 .header-nav-brand {
-    background-color:gold;
+    background-color:#5585b5;
     border-bottom: .1rem solid #eeeeee;
+    color: white;
 }
 
 .header-nav-brand-box {
@@ -53,7 +92,7 @@
 
 .header-nav a:hover{
     color: white;
-    background-color:orange;
+    background-color:#ffc93c;
     text-decoration: none;
     padding: 2rem;
 }
@@ -74,7 +113,7 @@ footer {
 }
 
 footer, footer p, footer a{
-    background-color: sandybrown;
+    background-color: #5585b5;
     color: white;
 }
 

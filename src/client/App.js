@@ -9,7 +9,7 @@ import "./App.css"
 
 function App() {
   return (
-
+    <div className="App">
     <Router>
       <Header />
       <section id="banner" />
@@ -27,7 +27,7 @@ function App() {
       </Switch>
       <Footer />
     </Router>
-
+    </div>
   );
 }
 

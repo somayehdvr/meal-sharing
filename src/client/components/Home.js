@@ -19,11 +19,11 @@ export default function Home() {
           {/* When the data result is empty (no meals), show "No results..." */}
           {data.length === 0 ? "No results..." :
             <>
-              <ul>
+              <div id="content">
                 {data.map(meal => {
-                  return <>*meal {meal.id} <MealItem key={meal.id} meal={meal} /> <br /></>
+                  return <> <MealItem key={meal.id} meal={meal} /></>
                 })}
-              </ul>
+              </div>
             </>
           }
         </>

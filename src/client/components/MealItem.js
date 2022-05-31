@@ -1,8 +1,10 @@
 import React from "react"
+import BorderComponent from "./BorderComponent"
 
 export default function MealItem({ meal }) {
     return (
-        <li>
+        
+            <BorderComponent color="#66bfbf">
             <h3>
                 id: {meal.id} <br />
                 title: {meal.title} <br />
@@ -12,7 +14,7 @@ export default function MealItem({ meal }) {
                 max_reservations: {meal.max_reservations} <br />
                 price: {meal.price} <br />
                 created_date: {meal.created_date} <br />
-            </h3>
-        </li>
+            </h3></BorderComponent>
+        
     )
 }
