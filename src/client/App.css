@@ -26,6 +26,20 @@
     justify-content:space-between;
 }
 
+
+/* ===================================================================
+ * # AddComponents
+ *
+ * ------------------------------------------------------------------- */
+
+ .AddComponents{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* ===================================================================
  * # borderComponent
  *
@@ -53,24 +67,6 @@
     position: relative;
     box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
-
-@media only screen and (max-width: 420px) {
-    .borderComponent {
-        width: 90%;
-    }
-}
-
-@media screen and (min-width: 420px) and (max-width: 900px) {
-    .borderComponent {
-        width: 45%;
-    }
-  }
-  
-  @media screen and (min-width: 900px) {
-    .borderComponent {
-        width: 30%;
-    }
-  }
 
 /* ===================================================================
  * # header
@@ -158,3 +154,40 @@ footer li li {
     flex-wrap: wrap;
     justify-content:space-between;
 }
+
+
+@media only screen and (max-width: 420px) {
+
+    .borderComponent {
+        width: 90%;
+    }
+
+    .AddComponents{
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 900px) {
+
+    .borderComponent {
+        width: 45%;
+    }
+
+    .AddComponents{
+        width: 80%;
+    }
+
+  }
+  
+  @media screen and (min-width: 900px) {
+
+    .borderComponent {
+        width: 30%;
+    }
+
+    .AddComponents{
+        width: 50%;
+    }
+
+  }

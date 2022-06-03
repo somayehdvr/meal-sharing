@@ -15,11 +15,9 @@ export default function Header() {
             </div>
 
             <ul class="header-nav">
-                <li><a href="/" title="home">home</a></li>
-                <li><a href="#about" title="about">about</a></li>
-                <li><a href="/meals" title="our services">Meals</a></li>
-                <li><a href="/reservations" title="reservations">Reservations</a></li>
-                <li><a href="/reviews" title="reviews">Reviews</a></li>
+                <li><a href="/" title="Home">home</a></li>
+                <li><a href="#about" title="About">about</a></li>
+                <li><a href="/meals" title="Meals to reserve">Meals</a></li>
             </ul>
                 </nav>
                 {/* end nav  */}
