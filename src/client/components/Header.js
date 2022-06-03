@@ -18,6 +18,8 @@ export default function Header() {
                 <li><a href="/" title="home">home</a></li>
                 <li><a href="#about" title="about">about</a></li>
                 <li><a href="/meals" title="our services">Meals</a></li>
+                <li><a href="/reservations" title="reservations">Reservations</a></li>
+                <li><a href="/reviews" title="reviews">Reviews</a></li>
             </ul>
                 </nav>
                 {/* end nav  */}
