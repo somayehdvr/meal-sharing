@@ -31,6 +31,9 @@ router.post("/", async (request, response) => {
         contact_name: body.contact_name,
         contact_email: body.contact_email
       });
+      await knex('meals')
+        .where({ id: body.meal_id })
+        .decrement({ max_reservations: body.number_of_guests })
       response.json(reservation)
     } catch (err) {
       throw err;

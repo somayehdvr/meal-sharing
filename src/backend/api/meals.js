@@ -19,7 +19,7 @@ router.get("/", async (request, response) => {
         }
       }
       if ("availableReservations" in query) {
-        meals.where('max_reservations', '>' , '0');
+        meals.where('max_reservations', '>', '0');
       }
       if ("title" in query) {
         meals.where({ title: query.title })
