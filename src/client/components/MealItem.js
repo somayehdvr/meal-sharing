@@ -6,7 +6,6 @@ export default function MealItem({ meal }) {
         
             <BorderComponent color="rgb(254, 166, 92)">
             <h3>
-                id: {meal.id} <br />
                 title: {meal.title} <br />
                 description: {meal.description} <br />
                 location: {meal.location} <br />
