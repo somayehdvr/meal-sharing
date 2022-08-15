@@ -22,7 +22,7 @@ export default function Meals() {
             <>
               <div id="content">
               {data.map(item => {
-                return <><BorderComponent color="rgb(254, 166, 92)"><a href={"/meals/" + item.id}>meal {item.id}: {item.title}</a></BorderComponent></>
+                return <><BorderComponent color="rgb(254, 166, 92)"><a href={"/meals/" + item.id}>meal: {item.title}</a></BorderComponent></>
               })}
               </div>
               <AddMeal /><br/>
