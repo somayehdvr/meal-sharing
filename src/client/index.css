@@ -6,14 +6,19 @@
 }
 
 #root {
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
   height: 100vh;
+}
+
+.main{
+background-image: url("./assets/images/bg.jpg");
 }
 
 body {
   margin: 0;
   font-size: 17px;
+  background-color: rgb(121, 43, 23);
 }
 
 ul {
@@ -28,7 +33,7 @@ a {
 }
 
 button {
-  background-color: #3e99c0;
+  background-color: rgb(254, 166, 92);
   border-radius: 8px;
   border-width: 0px;
   font-weight: 295;
@@ -39,8 +44,8 @@ button {
 
 @media screen and (max-width: 1400px) {
   #root {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
